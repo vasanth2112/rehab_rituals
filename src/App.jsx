@@ -348,17 +348,23 @@ function App() {
                   <div>
                     <h4>Address </h4>
                   </div>
-                  <div>
-                    <img src="./target.png"></img>
-                  </div>
+                 <div>
+           {/* //         <img src="./target.png"></img> */}
+                 </div>
                 </div>
 
-                <p>
-                  19-10,<br></br> Balaji Nagar 1st Main Rd,<br></br>
-                  Defence Colony,<br></br>Ekkatuthangal,
-                  <br></br>Chennai,
-                  <br></br>Tamil Nadu,India
-                </p>
+
+                <div className="map-container">
+                  <img src="./map.png" className="map-image" alt="Map" />
+                  <p>
+                    19-10,<br />
+                    Balaji Nagar 1st Main Rd,<br />
+                    Defence Colony,<br />
+                    Ekkatuthangal,<br />
+                    Chennai,<br />
+                    Tamil Nadu, India
+                  </p>
+                </div>
               </div>
             </div>
             <div className="footer_container_right">
