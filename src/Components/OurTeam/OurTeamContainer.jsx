@@ -2,7 +2,7 @@ import {OUR_TEAM } from "../../ListConstants.js";
 import "../OurTeam/OurTeam.scss"
 
 export default function OurTeamContainer() {
-    return (<div className="our_team_container">
+    return (<div id='ourTeam' className="our_team_container">
         <div className="our_team">
             <div className="our_team_header">
                 <h1>Our Team and Facilities</h1>

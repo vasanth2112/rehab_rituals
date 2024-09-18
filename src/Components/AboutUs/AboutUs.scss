@@ -97,7 +97,7 @@
         margin: 0px;
         font-family: "Cinzel", serif;
         font-weight: 350;
-        font-size: 2.5vw;
+        font-size: clamp(1.2rem, 2.5vw, 3rem);
         color: #004aad;
       }
 
@@ -107,7 +107,7 @@
         font-weight: 450px;
         color: rgb(102, 100, 100);
         line-height: 1.5;
-        font-size: clamp(1rem, 1.4vw, 3rem);
+        font-size: clamp(0.8rem, 1.4vw, 3rem);
       }
 
       b {
@@ -130,7 +130,7 @@
         margin-bottom: 20px;
         font-family: "Cinzel", serif;
         font-weight: 350;
-        font-size: 2.5vw;
+        font-size: clamp(1.2rem, 2.5vw, 3rem);
         color: #004aad;
       }
 
@@ -141,7 +141,7 @@
         font-weight: 450px;
         color: rgb(102, 100, 100);
         line-height: 1.5;
-        font-size: clamp(1rem, 1.4vw, 3rem);
+        font-size: clamp(0.8rem, 1.4vw, 3rem);
       }
     }
   }
@@ -167,6 +167,82 @@
     to {
       opacity: 1;
       transform: translateX(0px);
+    }
+  }
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 480px) {
+  .aboutus {
+
+    .anim {
+      top: 550px;
+      left: 50px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .anime {
+      bottom: 350px;
+      right: 150px;
+      height: 100px;
+      width: 100px;
+    }
+
+    .about_container {
+
+      .aboutus_flex {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+
+      }
+
+      .aboutus_flex_reverse {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+      }
+
+      .image_about {
+
+        .photo-style {
+
+          img {
+            height: 320px;
+            width: 220px;
+          }
+
+          p {
+            font-family: "Italianno", cursive;
+            font-weight: 500;
+            font-style: normal;
+            font-size: clamp(1.5rem, 1.4vw, 3rem);
+            margin: 5px 0px;
+          }
+        }
+      }
+
+      .about_content_reverse {
+        padding: 0px;
+        text-align: center;
+
+        p {
+          margin: 20px;
+        }
+      }
+
+      .about_content {
+        padding: 0px;
+        text-align: center;
+
+        p {
+          margin: 20px;
+        }
+      }
     }
   }
 }

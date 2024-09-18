@@ -2,7 +2,7 @@ import { TextField, Button } from "@mui/material";
 import "../ContactUs/Footer.scss"
 
 export default function FooterContainer() {
-    return (<div className="footer">
+    return (<div id='contact' className="footer">
         <div className="footer_flex">
             <div className="footer_div">
                 <div className="header_test">
@@ -20,6 +20,14 @@ export default function FooterContainer() {
                             <p>9994927394</p>
                         </div>
                     </div>
+                    <div className="contact">
+                        <div>
+                            <img src="./mail.png"></img>
+                        </div>
+                        <div>
+                            <p>rehabrituals@gmail.com</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="footer_aboutus_container">
@@ -35,10 +43,9 @@ export default function FooterContainer() {
                         </div>
                         <div className="socia_icons">
                             <img src="instagram.png"></img>
-                            <img src="twitter.png"></img>
-                            <img src="facebook.png"></img>
-                            <img src="youtube.png"></img>
-                            <img src="linkedin.png"></img>
+                            <img src="whatsapp.png"></img>
+                            <img src="mail.png"></img>
+                            <img src="facebook.png" style={{padding:"0px"}}></img>
                         </div>
                     </div>
                     <div className="working_hours">

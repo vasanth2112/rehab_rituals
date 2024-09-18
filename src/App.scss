@@ -2,6 +2,6 @@ h1 {
   text-align: center;
   font-family: "Cinzel", serif;
   font-weight: 500;
-  font-size: 50px;
+  font-size: clamp(1.2rem, 4vw, 3rem);
   color: #004aad;
 }

@@ -106,7 +106,7 @@
     display: flex;
     row-gap: 60px;
     flex-direction: column;
-    height: 80vh;
+    height: 650px;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
@@ -128,7 +128,7 @@
           text-transform: uppercase;
           letter-spacing: 1.2vw;
           line-height: 1.2;
-          font-size: 3.5vw;
+          font-size: 4.5vw;
           text-align: center;
           margin: 0px;
           position: relative;
@@ -159,8 +159,8 @@
 
         .back_logo {
           left: 160px;
-          height: 14vw;
-          width: 12vw;
+          height: 17vw;
+          width: 14vw;
         }
 
         .top_header {
@@ -228,7 +228,55 @@
 }
 
 
-@media only screen and (max-width: 550px) {
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+  .header-container {
+
+    .viewport-header {
+
+      .transparent_div {
+
+        .flex_header {
+
+          .back_logo {
+            height: 190px;
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+
+    .header-grid {
+
+      .nav-slide {
+        .nav-bar {
+          gap: 30px;
+        }
+      }
+    }
+
+    .viewport-header {
+
+      .transparent_div {
+
+        .flex_header {
+
+          .back_logo {
+            height: 150px;
+            width: 125px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
   .header-container {
 
     .header-grid {
@@ -242,7 +290,7 @@
 
         .burger-menu {
           display: block;
-          padding-right: 30px;
+          padding-right: 20px;
           /* Make the burger-menu visible */
 
           img {
@@ -250,40 +298,94 @@
             width: 25px;
           }
 
-          .close_btn{
-            .menu_list{
+          .close_btn {
+            .menu_list {
               width: 150px;
               display: flex;
               flex-direction: column;
               position: absolute;
               top: 100%; // Position below the burger menu
-              right: 30px;
-              background-color:rgba(255, 255, 255, 0.7960784314);
+              right: 25px;
+              background-color: rgba(255, 255, 255, 0.7960784314);
               padding: 10px;
               border-radius: 5px;
-              z-index: 2000; 
+              z-index: 2000;
 
-              a{
-                text-align: center;
+              .menu_img{
+                display: flex;
+                gap: 10px;
+                padding: 5px;
+                justify-content: start;
+                align-items: center;
+                img{
+                  padding-top: 3px;
+                  height: 20px;
+                  width: 20px;
+                }
+              }
+
+              a {
+                //text-align: center;
                 color: #004aad; // Ensure contrast
-                padding: 10px;
+                //padding: 10px;
                 text-decoration: none;
-                display: block; 
+                display: block;
                 font-family: "Gabarito", sans-serif;
                 font-size: clamp(0.8rem, 1vw, 3rem);
-                padding: 10px 0px;
+               // padding: 10px 0px;
                 position: relative;
                 letter-spacing: 2.5px;
                 border-radius: 5px;
               }
-              a:hover{
-                background-color: #004badbd;
-                color: white;
+
+              a:hover {
+                color: #5de1e9;
               }
             }
           }
+        }
+      }
+    }
 
-          
+    .viewport-header {
+
+      .transparent_div {
+
+        .flex_header {
+
+          .bottom_header {
+
+            h1 {
+              border-width: 2px 2px 2px 0px;
+              border-radius: 0px 5px 5px 0px;
+            }
+          }
+
+          .back_logo {
+            height: 100px;
+            width: 80px;
+          }
+
+          .top_header {
+
+            h1 {
+              border-width: 2px 0px 2px 2px;
+              border-radius: 5px 0px 0px 5px;
+            }
+          }
+        }
+
+        p {
+          letter-spacing: 5px;
+          font-size: 0.5rem;
+        }
+      }
+
+      .bottom_content {
+
+        span {
+          letter-spacing: 2px;
+          font-size: 0.6rem;
         }
       }
     }

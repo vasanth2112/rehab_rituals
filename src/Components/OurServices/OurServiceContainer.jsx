@@ -5,31 +5,31 @@ import "../OurServices/OurServices.scss"
 
 export default function OurServiceContainer() {
 
-    const [selectedTopic, setSelectedTopic] = useState(SERVICES["OT"]);
-    const [selectedTopicLable, setSelectedTopicLable] = useState(
-      SERVICE_CATEGORIES[0].label
-    );
-  
-    const [categoryId, setCategoryId] = useState(SERVICE_CATEGORIES[0].id);
-  
-    console.log(SERVICES["OT"]);
-  
-    function handleSelect(selectedButton) {
-      setSelectedTopic(SERVICES[selectedButton.id]);
-      setSelectedTopicLable(selectedButton.label);
-      setCategoryId(selectedButton.id);
-    }
-  
-    const [isReadMore, setIsReadMore] = useState(true);
-  
-    const toggleReadMore = (key) => {
-      setIsReadMore((prevState) => ({
-        ...prevState,
-        [key]: !prevState[key],
-      }));
-    };
+  const [selectedTopic, setSelectedTopic] = useState(SERVICES["OT"]);
+  const [selectedTopicLable, setSelectedTopicLable] = useState(
+    SERVICE_CATEGORIES[0].label
+  );
+
+  const [categoryId, setCategoryId] = useState(SERVICE_CATEGORIES[0].id);
+
+  console.log(SERVICES["OT"]);
+
+  function handleSelect(selectedButton) {
+    setSelectedTopic(SERVICES[selectedButton.id]);
+    setSelectedTopicLable(selectedButton.label);
+    setCategoryId(selectedButton.id);
+  }
+
+  const [isReadMore, setIsReadMore] = useState(true);
+
+  const toggleReadMore = (key) => {
+    setIsReadMore((prevState) => ({
+      ...prevState,
+      [key]: !prevState[key],
+    }));
+  };
   return (
-    <div className="services_container">
+    <div id='service' className="services_container">
       <div className="services">
         <div className="service_header">
           <h1>Our Professional Services</h1>
@@ -83,9 +83,8 @@ export default function OurServiceContainer() {
                 </div>
                 <div
                   key={key}
-                  className={`service_card_img_content ${
-                    isReadMore[key] ? "expanded" : ""
-                  }`}
+                  className={`service_card_img_content ${isReadMore[key] ? "expanded" : ""
+                    }`}
                 >
                   <h3>{selectedTopic[key].title}</h3>
                   <p>
