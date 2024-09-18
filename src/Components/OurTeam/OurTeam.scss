@@ -70,7 +70,7 @@
           font-style: normal;
           letter-spacing: 1px;
           margin: 8px 0px;
-          font-size: clamp(0.8rem, 1vw, 3rem);
+          font-size: clamp(0.8rem, 0.8vw, 3rem);
         }
       }
 
@@ -105,7 +105,7 @@
 
     //OUR
     .our_team_content {
-      margin: 50px 0px;
+      margin: 50px 15px;
       display: flex;
       gap: 50px;
       justify-content: center;
@@ -165,7 +165,7 @@
           font-style: normal;
           letter-spacing: 1px;
           margin: 0px 0px 0px 0px;
-         
+
           font-size: clamp(0.7rem, 0.9vw, 3rem);
         }
       }
@@ -229,16 +229,6 @@
         align-items: center;
         justify-content: center;
 
-        .our_team_img {
-
-
-          img {}
-
-          h4 {}
-
-          p {}
-        }
-
         .our_team_details {
 
           align-items: center;
@@ -254,39 +244,22 @@
 
       //OUR
       .our_team_content {
-        margin: 50px 0px;
+        margin: 50px 15px;
         display: flex;
         gap: 50px;
         justify-content: center;
         flex-wrap: wrap;
 
         .our_team_border {
-          background: rgb(93, 225, 233);
-          background: linear-gradient(180deg,
-              rgba(93, 225, 233, 1) 0%,
-              rgba(255, 255, 255, 1) 76%);
-          padding: 20px;
-          display: flex;
-          flex-direction: column;
-          gap: 10px;
-          border-radius: 0px;
 
           .our_team_img {
-            padding: 4px;
-            background-color: #fff;
+
             border-radius: 50%;
-            display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            animation: scaleOpacityAnime linear;
-            animation-timeline: view();
-            animation-range: entry 0% cover 30%;
-            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
           }
 
           img {
-            display: flex;
             justify-content: center;
             align-items: center;
             height: 120px;
@@ -295,25 +268,12 @@
           }
 
           h4 {
-            //  color: #004AAD;
-            color: #004aad;
             text-align: center;
             margin: 5px 0px 0px 0px;
-            font-family: "Yesteryear", cursive;
-            font-weight: 300;
-            font-size: clamp(1.2rem, 1.4vw, 3rem);
-            font-style: normal;
           }
 
           p {
             text-align: center;
-            color: #8c8c8db9;
-            font-family: "Anton", sans-serif;
-            font-weight: 400;
-            font-style: normal;
-            letter-spacing: 1px;
-            margin: 0px 0px 0px 0px;
-            font-size: clamp(0.7rem, 1.4vw, 3rem);
           }
         }
       }
