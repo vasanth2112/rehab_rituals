@@ -78,6 +78,7 @@ export default function OurServiceContainer() {
                       src={selectedTopic[key].image}
                       alt={selectedTopic[key].title}
                       className="service-image"
+                      loading="lazy"
                     />
                   </div>
                 </div>

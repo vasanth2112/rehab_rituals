@@ -1,6 +1,6 @@
 import "../Header/Header.scss";
 import { useState } from "react";
-import backgroung_video from "../../assets/videos/baby_walk.mp4";
+import backgroung_video from "../../assets/videos/baby_walk.webm";
 
 export default function HeaderContainer() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -24,32 +24,32 @@ export default function HeaderContainer() {
             {!isMenuOpen ?
               <div className="burger">
                 <div>
-                <img src="./menu.png" /></div>
+                <img src="./header/menu/menu.png" /></div>
               </div>
               :
               <div className="close_btn">
-                <img src="./close.png" />
+                <img src="./header/menu/close.png" />
 
                 <div className={`menu_list ${isMenuOpen ? "animation" : ""}`} >
                   <div className="menu_img">
-                    <div><img src="home.png"></img></div>
+                    <div><img src="./header/menu/home.png"></img></div>
                     <div> <a href="#home">Home</a></div>
                   </div>
                   <div className="menu_img">
-                    <div><img src="information.png"></img></div>
+                    <div><img src="./header/menu/information.png"></img></div>
                     <div> <a href="#aboutUs">About Us</a></div>
                   </div>
 
                   <div className="menu_img">
-                    <div><img src="group.png"></img></div>
+                    <div><img src="./header/menu/group.png"></img></div>
                     <div><a href="#ourTeam">Our Team</a></div>
                   </div>
                   <div className="menu_img">
-                    <div><img src="service.png"></img></div>
+                    <div><img src="./header/menu/service.png"></img></div>
                     <div><a href="#service">Services</a></div>
                   </div>
                   <div className="menu_img">
-                    <div><img src="contact.png"></img></div>
+                    <div><img src="./header/menu/contact.png"></img></div>
                     <div><a href="#contact" style={{paddingBottom:"5px"}}>Contact</a></div>
                   </div>
                 </div>
@@ -60,7 +60,7 @@ export default function HeaderContainer() {
         </div>
       </div>
       <video autoPlay loop muted>
-        <source src={backgroung_video} type="video/mp4" />
+        <source src={backgroung_video} type="video/webm" />
       </video>
 
       <header className="viewport-header">
@@ -70,7 +70,7 @@ export default function HeaderContainer() {
               <h1>Rehab</h1>
             </div>
             <div>
-              <img src="./back_logo.png" className="back_logo" alt="logo"></img>
+              <img src="./header/back_logo.png" className="back_logo" alt="logo"></img>
             </div>
             <div className="bottom_header">
               <h1>Rituals</h1>

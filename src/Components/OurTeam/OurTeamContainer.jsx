@@ -17,7 +17,7 @@ export default function OurTeamContainer() {
             <div className="our_team_facility">
                 <div>
                     <div className="our_team_img">
-                        <img src="./about_img_01.jpg"></img>
+                        <img src="./aboutus/knowme.webp"></img>
                         <h4>Vinodhini C</h4>
                         <p>Lead & Occupational Therapist</p>
                     </div>

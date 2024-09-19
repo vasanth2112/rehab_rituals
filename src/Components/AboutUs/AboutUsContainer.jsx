@@ -1,7 +1,7 @@
 import "../AboutUs/AboutUs.scss";
 import React, { useEffect, useRef } from "react";
 import lottie from "lottie-web";
-import butterfly from "../../../public/butterfly.json";
+import butterfly from "../../../public/aboutus/butterfly.json";
 
 export default function AboutUsContainer() {
   const butterflyAnimation1 = useRef(null);
@@ -39,7 +39,7 @@ export default function AboutUsContainer() {
           <div className="image_about">
             <div className="photo-style">
               <div style={{ paddingBottom: "40px" }}>
-                <img src="./about_img_01.jpg"></img>
+                <img src="./aboutus/welcome.webp"></img>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function AboutUsContainer() {
         <div className="aboutus_flex_reverse">
           <div className="image_about">
             <div className="photo-style">
-              <img src="./about_img_01.jpg"></img>
+              <img src="./aboutus/knowme.webp"></img>
 
               <p>Vinodhini C</p>
             </div>

@@ -56,7 +56,7 @@ export default function FooterContainer() {
                     </div>
                     <div className="contact">
                         <div className="contact_img">
-                            <img src="./telephone.png"></img>
+                            <img src="./footer/social/telephone.png"></img>
                         </div>
                         <div>
                             <a href="tel:9994927394">9994927394</a>
@@ -64,7 +64,7 @@ export default function FooterContainer() {
                     </div>
                     <div className="contact">
                         <div className="contact_img">
-                            <img src="./mail.png"></img>
+                            <img src="./footer/social/mail.png"></img>
                         </div>
                         <div>
                             <a href="mailto:rehabrituals@gmail.com?subject=Need%20Your%20Help%20">rehabrituals@gmail.com</a>
@@ -75,7 +75,7 @@ export default function FooterContainer() {
                 <div className="footer_aboutus_container">
                     <div className="footer_aboutus">
                         <div>
-                            <img src="./day-care-logo.jpg"></img>
+                            <img src="./footer/logo/day-care-logo.jpg"></img>
                         </div>
                         <div>
                             <p>
@@ -85,16 +85,16 @@ export default function FooterContainer() {
                         </div>
                         <div className="socia_icons">
                             <a href="https://www.instagram.com/rehabrituals/?utm_source=qr&igsh=Ymc2ZHV3NTdvYzFl">
-                                <img src="instagram.png"></img>
+                                <img src="./footer/social/instagram.png"></img>
                             </a>
                             <a href="https://api.whatsapp.com/send?phone=919994927394">
-                                <img src="whatsapp.png"></img>
+                                <img src="./footer/social/whatsapp.png"></img>
                             </a>
                             <a href="mailto:rehabrituals@gmail.com?subject=Need%20Your%20Help%20">
-                                <img src="mail.png"></img>
+                                <img src="./footer/social/mail.png"></img>
                             </a>
                             <a href="https://www.facebook.com/share/ZMa6ebpHS45oSxoX/?mibextid=qi2Omg">
-                                <img src="facebook.png" style={{ padding: "0px" }}></img>
+                                <img src="./footer/social/facebook.png" style={{ padding: "0px" }}></img>
                             </a>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ export default function FooterContainer() {
 
                         <div className="map-container">
                             <a href="https://www.google.co.in/maps/place/Rehab+Rituals/@13.0230995,80.2026027,17z/data=!3m1!4b1!4m6!3m5!1s0x3a5267f414488e01:0x4ff1a5bfcdea4c38!8m2!3d13.0230995!4d80.2051776!16s%2Fg%2F11j91h9zdy?entry=ttu&g_ep=EgoyMDI0MDkxNi4wIKXMDSoASAFQAw%3D%3D"
-                            ><img src="./map.png" className="map-image" alt="Map" /></a>
+                            ><img src="./footer/map/map.png" className="map-image" alt="Map" /></a>
                             <p>
                                 19-10,
                                 <br />
