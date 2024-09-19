@@ -39,7 +39,9 @@ export default function OurTeamContainer() {
                     </p>
                 </div>
             </div>
+            <div><h2>Meet Our Team</h2></div>
             <div className="our_team_content">
+
                 {OUR_TEAM.map((content, index) => (
                     <div className="our_team_border">
                         <div className="our_team_img">

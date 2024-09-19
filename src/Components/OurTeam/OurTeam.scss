@@ -103,9 +103,19 @@
       }
     }
 
-    //OUR    
+    div{
+      h2 {
+        margin: 30px 0px;
+        font-family: "Lexend", sans-serif;
+        font-weight: 550;
+        font-size: clamp(1rem, 1.8vw, 3rem);
+        color: #004aad;
+      }
+    }
+
+    //OUR
     .our_team_content {
-      margin: 50px 10px;
+      margin: 0px 15px 50px 15px;
       display: flex;
       gap: 50px;
       justify-content: center;
@@ -232,6 +242,20 @@
         .our_team_details {
 
           align-items: center;
+          animation: scaleOpacityAnime linear;
+          animation-timeline: view();
+          animation-range: entry 0% cover 30%;
+          @keyframes scaleOpacityAnime {
+            from {
+              opacity: 0.5;
+              scale: 0.5;
+            }
+        
+            to {
+              opacity: 1;
+              scale: 1;
+            }
+          }
 
           h2 {}
 
@@ -244,12 +268,9 @@
 
       //OUR
       .our_team_content {
-        display: flex;
-        gap: 50px;
-        justify-content: center;
-        flex-wrap: wrap;
 
         .our_team_border {
+          padding: 10px;
 
           .our_team_img {
 
@@ -259,11 +280,8 @@
           }
 
           img {
-            justify-content: center;
-            align-items: center;
-            height: 120px;
-            width: 120px;
-            border-radius: 50%;
+            height: 90px;
+            width: 90px;
           }
 
           h4 {

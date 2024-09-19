@@ -141,7 +141,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 30px;
+      flex-direction: column;
+     // flex-wrap: wrap;
+      gap: 10px;
 
       .map-image {
         width: 130px; // Set width and height to the same value to make it round
@@ -174,7 +176,7 @@
     }
 
     h4 {
-      margin: 10px 0px 0px 0px;
+      margin-bottom: 20px;
       font-family: "Josefin Sans", sans-serif;
     }
 
@@ -183,6 +185,7 @@
       font-family: "Josefin Sans", sans-serif;
       font-weight: 200;
       margin-bottom: 0px;
+      text-align: center;
     }
   }
 

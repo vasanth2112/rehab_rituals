@@ -60,7 +60,6 @@ export default function FooterContainer() {
                             <div>
                                 <h4>Address </h4>
                             </div>
-                            <div>{/* //         <img src="./target.png"></img> */}</div>
                         </div>
 
                         <div className="map-container">
@@ -76,7 +75,7 @@ export default function FooterContainer() {
                                 <br />
                                 Chennai,
                                 <br />
-                                Tamil Nadu, India
+                                Tamil Nadu, India.
                             </p>
                         </div>
                     </div>
