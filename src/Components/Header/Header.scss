@@ -289,19 +289,38 @@
           display: none;
         }
 
+
+
+
         .burger-menu {
           display: block;
-          padding-right: 20px;
-          /* Make the burger-menu visible */
+          margin-right: 20px;
 
-          img {
+
+          .burger {
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            justify-content: right;
             height: 25px;
             width: 25px;
+            div {
+              position: absolute;
+              animation: rightBurger 2s 1;
+  
+              img {
+                height: 25px;
+                width: 25px;
+              }
+            }
           }
+
+
+
 
           .close_btn {
             .menu_list {
-              width: 150px;
+              width: 130px;
               display: flex;
               flex-direction: column;
               position: absolute;
@@ -310,18 +329,20 @@
               background-color: rgba(255, 255, 255, 0.7960784314);
               padding: 10px;
               border-radius: 5px;
-              z-index: 2000;
+              z-index: 200;
 
-              .menu_img{
+
+
+              .menu_img {
                 display: flex;
                 gap: 10px;
-                padding: 5px;
+                padding: 7px;
                 justify-content: start;
                 align-items: center;
-                img{
-                  padding-top: 3px;
-                  height: 20px;
-                  width: 20px;
+
+                img {
+                  height: 18px;
+                  width: 18px;
                 }
               }
 
@@ -331,11 +352,11 @@
                 //padding: 10px;
                 text-decoration: none;
                 display: block;
-                font-family: "Gabarito", sans-serif;
+                font-family: "Lexend", sans-serif;
                 font-size: clamp(0.8rem, 1vw, 3rem);
-               // padding: 10px 0px;
+                // padding: 10px 0px;
                 position: relative;
-                letter-spacing: 2.5px;
+                letter-spacing: 1px;
                 border-radius: 5px;
               }
 
@@ -343,6 +364,45 @@
                 color: #5de1e9;
               }
             }
+
+            .animation {
+              animation: zoom 0.2s linear;
+            }
+
+            @keyframes zoom {
+              from {
+                transform: translatey(-100px);
+                scale: 0;
+                opacity: 0.3;
+              }
+
+              to {
+                transform: translatey(0px);
+                scale: 1;
+                opacity: 1;
+              }
+            }
+          }
+        }
+
+
+        @keyframes fromBottom {
+          from {
+            bottom: -100px;
+          }
+
+          to {
+            bottom: 0px;
+          }
+        }
+
+        @keyframes rightBurger {
+          from {
+            right: -50px;
+          }
+
+          to {
+            right: 0px;
           }
         }
       }

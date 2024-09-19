@@ -19,16 +19,18 @@ export default function HeaderContainer() {
             <a href="#service">Services</a>
             <a href="#contact">Contact</a>
           </div>
+          
           <div className="burger-menu" onClick={toggleMenu}>
             {!isMenuOpen ?
-              <div>
-                <img src="./menu.png" />
+              <div className="burger">
+                <div>
+                <img src="./menu.png" /></div>
               </div>
               :
               <div className="close_btn">
                 <img src="./close.png" />
 
-                <div className="menu_list">
+                <div className={`menu_list ${isMenuOpen ? "animation" : ""}`} >
                   <div className="menu_img">
                     <div><img src="home.png"></img></div>
                     <div> <a href="#home">Home</a></div>
@@ -48,7 +50,7 @@ export default function HeaderContainer() {
                   </div>
                   <div className="menu_img">
                     <div><img src="contact.png"></img></div>
-                    <div><a href="#contact">Contact</a></div>
+                    <div><a href="#contact" style={{paddingBottom:"5px"}}>Contact</a></div>
                   </div>
                 </div>
               </div>

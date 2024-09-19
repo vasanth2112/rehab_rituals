@@ -246,16 +246,17 @@
         align-items: center;
         gap: 20px;
 
-        .hover_line{
+        .hover_line {
           display: none;
         }
+
         .selected-service {
           .selected-text {
             scale: 1.2;
             transition: all 0.2s linear;
             color: #5de1e9;
           }
-  
+
           .selected-line {
             display: none;
           }
@@ -270,9 +271,11 @@
         }
 
       }
+
       .selected-line {
         display: none;
       }
+
       .service_detail_container {
 
 
@@ -288,8 +291,8 @@
             .image_container {
 
               .image_card {
-              //  display: none;
-              transform:rotate(0deg);
+                //  display: none;
+                transform: rotate(0deg);
 
                 img {
                   height: 150px;
@@ -302,7 +305,8 @@
               text-align: center;
               background: -webkit-linear-gradient(280deg, #fff 20%, #74e5ec);
               border-radius: 0px 0px 10px 10px;
-              
+              box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+
               span {}
 
               h3 {
