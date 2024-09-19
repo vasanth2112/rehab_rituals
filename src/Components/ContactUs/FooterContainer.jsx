@@ -55,7 +55,7 @@ export default function FooterContainer() {
                         <h1>Contact Us</h1>
                     </div>
                     <div className="contact">
-                        <div>
+                        <div className="contact_img">
                             <img src="./telephone.png"></img>
                         </div>
                         <div>
@@ -63,7 +63,7 @@ export default function FooterContainer() {
                         </div>
                     </div>
                     <div className="contact">
-                        <div>
+                        <div className="contact_img">
                             <img src="./mail.png"></img>
                         </div>
                         <div>
