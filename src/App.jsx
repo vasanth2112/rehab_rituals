@@ -5,6 +5,7 @@ import AboutUsContainer from "./Components/AboutUs/AboutUsContainer.jsx";
 import OurServiceContainer from "./Components/OurServices/OurServiceContainer.jsx";
 import OurTeamContainer from "./Components/OurTeam/OurTeamContainer.jsx";
 import FooterContainer from "./Components/ContactUs/FooterContainer.jsx";
+import Tooltip from '@mui/material/Tooltip';
 
 function App() {
   const [showButton, setShowButton] = useState(false);
@@ -27,8 +28,8 @@ function App() {
     // Attach the scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-        // Call the handler once to ensure correct initial state
-        handleScroll();
+    // Call the handler once to ensure correct initial state
+    handleScroll();
 
     // Cleanup event listener on unmount
     return () => {
@@ -57,11 +58,13 @@ function App() {
 
       {/* Scroll to Top Button */}
       {showButton && (
-        <img
-          src="./arrow.png"
-          className="scroll-to-top"
-          onClick={scrollToTop}
-        />
+        <Tooltip title="Back to Top" placement="top">
+          <img
+            src="./arrow.png"
+            className="scroll-to-top"
+            onClick={scrollToTop}
+          />
+        </Tooltip>
       )}
     </>
   );
