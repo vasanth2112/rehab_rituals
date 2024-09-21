@@ -212,7 +212,7 @@ export const SERVICES = {
 
     export const OUR_TEAM = [
         {
-            image: women,
+            image: men,
             name: "Gnana Oli",
             role: "Physiotherapist"
         },
