@@ -77,7 +77,7 @@ export default function HeaderContainer() {
             </div>
           </div>
           <div>
-            <p>Pioneering Healthcare</p>
+            <p>Pioneering Research Driven Therapy</p>
           </div>
         </div>
         <div className="bottom_content">

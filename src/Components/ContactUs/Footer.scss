@@ -362,3 +362,10 @@
     padding: 0px;
   }
 }
+
+/* Larger tablets (769px to 1024px) */
+@media (min-width: 650px) and (max-width: 1500px) {
+  .footer_container_right .message_box_conrtainer {
+    width: 60%;
+  }
+}

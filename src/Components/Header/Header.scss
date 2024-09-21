@@ -190,7 +190,7 @@
         text-transform: uppercase;
         margin-top: 0px;
         text-align: center;
-        letter-spacing: 10px;
+        letter-spacing: 6px;
         color: #004badcc;
         font-size: clamp(0.5rem, 1vw, 3rem);
         margin: 10px 0px 20px 0px;
@@ -285,6 +285,7 @@
       align-items: right;
 
       .nav-slide {
+        height: 25px;
         .nav-bar {
           display: none;
         }
@@ -324,10 +325,10 @@
               display: flex;
               flex-direction: column;
               position: absolute;
-              top: 100%; // Position below the burger menu
+              top: 105%; // Position below the burger menu
               right: 25px;
               background-color: rgba(255, 255, 255, 0.7960784314);
-              padding: 10px;
+              padding: 7px;
               border-radius: 5px;
               z-index: 200;
 
@@ -336,7 +337,7 @@
               .menu_img {
                 display: flex;
                 gap: 10px;
-                padding: 7px;
+                padding: 6.5px;
                 justify-content: start;
                 align-items: center;
 
@@ -437,8 +438,9 @@
         }
 
         p {
-          letter-spacing: 5px;
-          font-size: 0.5rem;
+          letter-spacing: 4px;
+          font-size: 0.4rem;
+          line-height: 1rem;
         }
       }
 
