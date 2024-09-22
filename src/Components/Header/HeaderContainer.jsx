@@ -1,8 +1,8 @@
 import "../Header/Header.scss";
 import { useState,useRef,useEffect } from "react";
 import background_video from "../../assets/videos/baby_walk.webm";
-import lottie from "lottie-web";
 import loader from "../../../public/loader.json";
+import Lottie from "lottie-web";
 
 export default function HeaderContainer() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,11 +16,11 @@ export default function HeaderContainer() {
     setIsVideoLoaded(true);
   };
 
-  const loaderAnumation = useRef(null);
+  const loaderAnimation = useRef(null);
 
   useEffect(() => {
-    const loading = lottie.loadAnimation({
-      container: loaderAnumation.current,
+    const loading = Lottie.loadAnimation({
+      container: loaderAnimation.current,
       renderer: "svg",
       loop: true,
       autoplay: true,
@@ -35,7 +35,7 @@ export default function HeaderContainer() {
   return (
     <div id="home" className="header-container">
       {!isVideoLoaded && (
-       <div ref={loaderAnumation} className="loader"></div> // Replace with your loader design
+       <div ref={loaderAnimation} className="loader"></div> // Replace with your loader design
       )}
       <video autoPlay loop muted onCanPlayThrough={handleVideoLoad}>
         <source src={background_video} type="video/webm" />
