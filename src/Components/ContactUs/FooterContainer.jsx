@@ -22,15 +22,15 @@ export default function FooterContainer() {
         e.preventDefault();
 
         emailjs.send(
-            'vasanth', // Replace with your EmailJS service ID
-            'template_a1976mo', // Replace with your EmailJS template ID
+            'service_k1cl3n9', // Replace with your EmailJS service ID
+            'template_yc3mp1y', // Replace with your EmailJS template ID
             {
                 from_name: formData.name,
                 from_email: formData.email,
                 to_name: "Rihab Rituals",
                 message: formData.message,
             },
-            'UmoarMmxZeg-DNKiG' // Replace with your EmailJS user ID
+            '4k87KzehqGdNBQtUJ' // Replace with your EmailJS user ID
         )
             .then(
                 (result) => {
