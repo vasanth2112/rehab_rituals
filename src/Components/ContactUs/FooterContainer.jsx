@@ -70,6 +70,16 @@ export default function FooterContainer() {
                             <a href="mailto:rehabrituals@gmail.com?subject=Need%20Your%20Help%20">rehabrituals@gmail.com</a>
                         </div>
                     </div>
+                    <a href="https://api.whatsapp.com/send?phone=919994927394">
+                        <div className="contact_whatsapp">
+                            <div className="wa_img">
+                                <img src="./footer/social/whatsapp_direct.png"></img>
+                            </div>
+                            <div>
+                                <p>9994927394</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
                 <div className="footer_aboutus_container">
@@ -133,7 +143,7 @@ export default function FooterContainer() {
                 </div>
                 <div className="footer_container_right">
                     <div className="message_header">
-                        <p>Talk to Us</p>
+                        <p>Your Feedback</p>
                     </div>
                     <div className="message_box_conrtainer">
                         <form onSubmit={sendEmail}>
