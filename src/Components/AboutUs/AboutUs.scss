@@ -173,7 +173,25 @@
 
 
 /* Media Queries for Responsive Design */
-@media (max-width: 1200px) {}
+@media (min-width: 900px) {
+
+  .aboutus .about_container 
+  .about_content p {
+    font-size: 1.1rem;
+}
+
+.aboutus .about_container .about_content_reverse p {
+
+    font-size: 1.1rem;
+}
+
+
+.services_container .services .service_list div p {
+
+  font-size:1rem;
+
+}
+}
 
 @media (max-width: 768px) {}
 
