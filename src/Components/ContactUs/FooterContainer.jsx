@@ -76,7 +76,7 @@ export default function FooterContainer() {
                                 <img src="./footer/social/whatsapp_direct.png"></img>
                             </div>
                             <div>
-                                <p>9994927394</p>
+                                <p>WhatsApp</p>
                             </div>
                         </div>
                     </a>
